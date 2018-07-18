@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>test</title>
-    <link rel="stylesheet" type="text/css" href="./node_modules/jasmine-core/lib/jasmine-core/jasmine.css">
-    <link rel="stylesheet" type="text/css" href="./node_modules/jasmine-core/lib/jasmine-core/jasmine.css"></link>
+    <meta charset="UTF-8">
+    <title>Home work 13</title>
 
-    <script src="./node_modules/jasmine-core/lib/jasmine-core/jasmine.js"></script>
-    <script src="./node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
-    <script src="./node_modules/jasmine-core/lib/jasmine-core/boot.js"></script>
-    <script src="./main.spec.js"></script>
+    <style>
+        #dataContainer > div > span:not(:last-child) {
+            margin-right: 2px;
+        }
+    </style>
 </head>
 <body>
+<button id="loadData">Load data</button>
+<div id="dataContainer"></div>
+<script src="main.js"></script>
+</body>
+</html>

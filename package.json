@@ -16,8 +16,7 @@
     "url": "https://github.com/DzmitryGrom/learnJsNew/issues"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.4",
-    "jasmine": "^3.1.0"
+    "browser-sync": "^2.24.4"
   },
   "homepage": "https://github.com/DzmitryGrom/learnJsNew#readme"
 }
