@@ -4,19 +4,20 @@
 
   loadDataButtonElement.addEventListener('click', () => {
     // improve code here
+
+    if(dataContainerElement.children.length  > 0) {
+      return
+    }
     loadData('users.json', allUsers);
 
     function allUsers(result) {
-      usersLength = result.length;
+
       for (var key in result) {
-        if((dataContainerElement.children.length + 1)  > result.length) {
-          return false;
-        }
         const dataBlockElement = createUserDataBlockElement(result[key]);
         dataContainerElement.appendChild(dataBlockElement);
       }
     }
-
+    console.log(dataContainerElement.children.length);
   });
 
   function loadData(url, callback) {
